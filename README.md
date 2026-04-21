@@ -35,11 +35,3 @@ A full-stack MERN web application where users can discover, create, and share re
 
 ## 📂 Project Structure
 
----
-
-## ⚙️ Installation
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/amanjain-31/chefyy.git
-cd chefyy
