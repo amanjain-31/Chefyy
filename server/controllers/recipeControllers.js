@@ -1,28 +1,20 @@
-const getRecipeByIdController = async (req, res) => {
-    const id = req.params.id;
-
+const getRecipesController = async (req, res) => {
     try {
-        const recipe = await Recipe.findById(id);
 
-        if (!recipe) {
-            return res.status(404).json({
-                success: false,
-                message: "Recipe not found"
-            });
-        }
+        const recipes = await Recipe.find().limit(50);
 
         return res.status(200).json({
             success: true,
-            message: "Got Recipe successfully",
-            recipe
+            message: "Got Recipes successfully....",
+            recipes: recipes,
         });
 
     } catch (error) {
-        console.log(error);
+        console.log("ERROR:", error); // IMPORTANT DEBUG
         return res.status(500).json({
             success: false,
-            message: "Error in Get recipe by id",
-            error
+            message: "Error in Get recipes....",
+            error: error.message
         });
     }
 };
