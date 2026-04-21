@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config();
 import "dotenv/config";
 import express from "express";
 import cors from "cors";
@@ -34,8 +36,7 @@ app.use("/api/v1/recipe",recipeRoutes);
 connectDB();
 
 // Setting up PORT to listen -----------------------
-const PORT = process.env.PORT || 8000;
-
+const PORT = process.env.PORT || 5000;
 // REST api -----------------------
 app.get("/" , (req,res) => {
     res.status(200).json({message: "Welcome To The SERVER...."})

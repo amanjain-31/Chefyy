@@ -1,3 +1,4 @@
+const serverURI = import.meta.env.VITE_API_URL;
 import React, { useEffect, useState } from 'react';
 import Layout from './components/Layout/Layout';
 import RecipeCard from './components/RecipeCard';
