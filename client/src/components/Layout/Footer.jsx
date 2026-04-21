@@ -12,11 +12,11 @@ const Footer = () => {
                         &copy; {new Date().getFullYear()} Yum Recipe. All rights reserved
                     </p>
                     <div className="total-shots-count-container flex gap-x-2">
-                        <a href="https://github.com/harshkumar123456" className="w-8">
+                        <a href="https://github.com/amanjain-31" className="w-8">
                             <img src={githubIcon} alt="github-icon" />
                         </a>
-                        <a href="https://www.linkedin.com/in/harsh-kumar-158634233/" className="w-8">
-                            <img src={linkedinIcon} alt="github-icon" />
+                        <a href="https://www.linkedin.com/in/aman-jain-31/" className="w-8">
+                            <img src={linkedinIcon} alt="linkedin-icon" />
                         </a>
                     </div>
                 </div>
